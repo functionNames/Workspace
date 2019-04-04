@@ -1,0 +1,79 @@
+<!--pages/nav/nav.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class=''>
+      <view class='content'>
+        <view class='navs font15 white' wx:for="{{list}}" wx:key="*this">
+          <view data-index="{{index}}" bindtap='navclick'>{{item}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- <view class="nav">
+	<ul>
+		<view class="search"  bindtap="switchUser"
+		data-index="{{ index }}">
+			<li>
+				<span>搜索</span>
+			</li>
+		</view>
+		<view class="user"  bindtap="switchUser"
+		data-index="{{ index }}">
+			<li>
+				<span>我的</span>
+			</li>
+		</view>
+		<view class="kind" bindtap="switchKind"
+		data-index="{{ index }}">
+			<li>
+				<span>分类</span>
+			</li>
+		</view>
+	</ul>
+	
+	<ul>
+		<view class="search" bindtap="switchUser"
+		data-index="{{ index }}">
+			<li>
+				<span>陪我聊天</span>
+			</li>
+		</view>
+		<view class="search" bindtap="switchUser"
+		data-index="{{ index }}">
+			<li>
+				<span>陪我玩游戏</span>
+			</li>
+		</view>
+		<view class="shuaxin" bindtap="switchShuaxin"
+		data-index="{{ index }}">
+			<li>
+				<span>刷新</span>
+			</li>
+		</view>
+	</ul>
+	
+	<ul>
+		<view class="public" bindtap="switchPublic"
+		data-index="{{ index }}">
+			<li>
+				<span>发布</span>
+			</li>
+		</view>
+		<view class="kind" bindtap="switchKind"
+		data-index="{{ index }}">
+			<li>
+				<span>分类</span>
+			</li>
+		</view>
+		<view class="user"  bindtap="switchUser"
+		data-index="{{ index }}">
+			<li>
+				<span>我的</span>
+			</li>
+		</view>
+	</ul>
+	
+	
+</view> -->

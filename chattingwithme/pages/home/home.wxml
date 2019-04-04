@@ -1,0 +1,66 @@
+<view class="container">
+  <view class="page-body">
+    <view class="header swiperbg">
+      <!-- <view class="swiferheader">
+			<navigator class="address" url="../address/address">{{ city }}</navigator>
+			<navigator class="address" url="../nav/nav">导航</navigator>
+	</view> -->
+      <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}">
+        <block wx:for="{{imgUrl}}" wx:for-item="bannerImgUrls" wx:key="{{ index }}">
+          <swiper-item>
+            <image src="{{bannerImgUrls.imgUrls}}" class="slide-image" width="100%" height="150" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="swiferheader">
+        
+        <navigator class="address" url="../nav/nav">导航</navigator>
+        <navigator class="address" url="../address/address">{{ city }}</navigator>
+      </view>
+    </view>
+
+    <view class="prolist">
+      <view class="proItem borderBottom flex-start" wx:for="{{ prolistTen }}" wx:for-item="itemImgUrl" wx:key="{{ index }}" bindtap="switchProlistDetail" data-index="{{ index }}">
+        <view class="proImg">
+          <image src="{{itemImgUrl.imgUrl[0]}}" alt=""></image>
+        </view>
+        <view class='space-between width70bi'>
+          <view class='font14 height25'>
+            <view class='titles'>标题：{{ itemImgUrl.title }}</view>
+            <view class='gray'>概要：{{ itemImgUrl.outline }}</view>
+            <view class='gray course-name'>内容：{{ itemImgUrl.content }}</view>
+            <view class='flex-start gray font12 marbo10'>
+              <view class='titlebtn'>标签标签</view>
+              <view class='titlebtn'>标签标签</view>
+            </view>
+          </view>
+          <view >
+            <view class='font14 blue'>4/2h</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- <view class="prolist">
+      <view class="proItem" wx:for="{{ prolist }}" wx:for-item="itemImgUrl" wx:key="{{ index }}" bindtap="switchProlistDetail" data-index="{{ index }}">
+        <view class="proImg">
+          <image src="{{itemImgUrl.imgUrl[0]}}" alt=""></image>
+        </view>
+        <view class="proInfo">
+          <view class="title">
+            {{ itemImgUrl.title }}
+          </view>
+          <view class="twotitle">
+            {{ itemImgUrl.outline }}
+          </view>
+          <view class="labels">
+            <text>{{ itemImgUrl.label }}</text>
+            <text>{{ itemImgUrl.label }}</text>
+          </view>
+          <view class="twotitle course-name">
+            {{ itemImgUrl.content }}
+          </view>
+        </view>
+      </view>
+    </view> -->
+  </view>
+</view>

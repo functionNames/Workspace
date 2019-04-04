@@ -1,0 +1,118 @@
+/* pages/home/home.wxss */
+
+swiper swiper-item .slide-image {
+  width: 100%;
+}
+
+.swiferheader navigator:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.swiferheader navigator:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* 
+.prolist {
+  width: 100%;
+}
+.prolist .proItem {
+  width: 100%;
+  height: 300rpx;
+  
+  border-bottom: 1rpx solid #ccc;
+  
+}
+.prolist .proItem .proImg {
+  width: 30%;
+  height: 280rpx;
+  border-right: 1px solid #CCCCCC;
+  float: left;
+  margin-top: 8rpx;
+  margin-left: 8rpx;
+  margin-right: 20rpx;
+}
+.prolist .proItem .proImg image {
+  width: 98%;
+  max-height: 280rpx;
+}
+.prolist .proItem .proInfo .title {
+	font-size: 32rpx;
+	font-weight: bold;
+	display: inline-block;
+	background: #006600;
+	color: #FFFFFF;
+  margin-top: 6px;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+.prolist .proItem .proInfo .twotitle{
+  margin-top: 4px;
+}
+.prolist .proItem .proInfo .labels text:first-child{
+	background: red;
+}
+.prolist .proItem .proInfo .labels{
+  margin-top: 4px;
+}
+.prolist .proItem .proInfo .labels text:nth-child(2){
+	background: #E9DC51;
+}
+.prolist .proItem .proInfo .labels text{
+  margin: 0 10px 0 0;
+	padding: 0 4px;
+  border-radius: 4px;
+} */
+.swiperbg{
+  background-color:#F1F1F1;
+
+}
+.prolist {
+  padding-left: 20px;
+}
+
+.proItem {
+  padding:20px 20px 20px 0px;
+}
+
+.proImg {
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.proImg image {
+  width: 100px;
+  max-height: 100px;
+}
+
+.titlebtn {
+border:1px solid #eaeaea;
+border-radius:4px;
+height:19px;
+line-height:19px;
+padding:0px 7px;
+margin:9px 9px 0px 0px;
+
+
+}
+
+.marbo10 {
+  margin-bottom: 0px;
+}
+.width70bi{
+  width: 100%;
+}
+
+.moreimg {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #f1f1f1;
+  margin-right: 10px;
+}
+
+/* ******************swifer********************* */

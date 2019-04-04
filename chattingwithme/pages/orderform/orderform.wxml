@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="page-body">
+    <view class='orderNav flex-start'>
+      <view bindtap='orderChange' class="{{indexs==0?'orderNavChg':''}}" data-indexs='0'>待进行</view>
+      <view bindtap='orderChange' class="{{indexs==1?'orderNavChg':''}}" data-indexs='1'>进行中</view>
+      <view bindtap='orderChange' class="{{indexs==2?'orderNavChg':''}}" data-indexs='2'>已完成</view>
+      <view bindtap='orderChange' class="{{indexs==3?'orderNavChg':''}}" data-indexs='3'>待评价</view>
+    </view>
+    <block wx:if="{{orderfromListTen.length!=0}}">
+      <view class='margintop45'>
+        <view wx:for="{{orderfromListTen}}" class='marginbottom20' wx:key="*this">
+          <view class='contenteach'>
+            <view class='space-between height35 borderBottom'>
+              <view class='font15 '>
+                <view>编号:{{item.id}}</view>
+              </view>
+              <view wx:if="{{indexs==0}}" class='font13 gray'>待进行</view>
+              <view wx:if="{{indexs==1}}" class='font13 gray'>进行中</view>
+              <view wx:if="{{indexs==2}}" class='font13 gray'>已完成</view>
+              <view wx:if="{{indexs==3}}" class='font13 gray'>待评价</view>
+            </view>
+            <view class='flex-start paddingtop12'>
+              <view class='headImgView '>
+                <image class='headImg' src='{{item.imgUrl}}'></image>
+              </view>
+              <view class='contentmglf font14 gray'>
+                <view class='height25'>时间：{{item.time}}</view>
+                <view class='height25'>类型：{{item.label}}</view>
+                <view class='height25'>标题：{{item.title}}</view>
+                <view class='height25 course-name'>内容：{{item.content}}</view>
+                <view class='height25'>总价：{{item.price}}</view>
+              </view>
+            </view>
+            <view wx:if="{{indexs==1}}" class='flex-end font13' bindtap='complete' data-index="{{item.id}}">
+              <view class='look gray'>完成</view>
+            </view>
+
+            <view wx:if="{{indexs==3}}" class='flex-end font13' bindtap='lookdetails' data-index="{{item.id}}" data-img="{{item.imgUrl}}" data-title="{{item.title}}">
+              <view class='look gray'>评价</view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </block>
+    <block wx:if="{{orderfromListTen.length==0}}">
+      <view class='nodata'>暂无数据</view>
+    </block>
+  </view>
+</view>

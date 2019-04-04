@@ -1,0 +1,17 @@
+/* pages/downloadapp/downloadapp.wxss */
+.content{
+  overflow: hidden;
+}
+.content .erweima{
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin: 80px auto 50px;
+  
+}
+.content .haha span{
+  display: block;
+  text-align: center;
+  color: #F88396;
+  font-family: "microsoft yahei";
+}

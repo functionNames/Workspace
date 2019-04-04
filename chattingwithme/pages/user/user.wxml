@@ -1,0 +1,33 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class='myLogin'>
+      <!-- <view class='myLogin'>
+        登录背景图片
+        <image class='myLoginImg' src=''></image>
+      </view> -->
+      <view class='myLogin themeColor  absolute  z-index'>
+        <view class='head margintop25 '>
+          <image class=' headimg' src="{{(!hasUserInfo && canIUse)?'../../images/headimg.png':userInfo.avatarUrl}}"></image>
+        </view>
+        <button class='btn font13 btnClear' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+          登录
+        </button>
+        <view wx:else class="headText font15">
+          <text>{{userInfo.nickName}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='contan'>
+      <block wx:for="{{pages}}" wx:key="*this" wx:for-index="index">
+       <view  bindtap='userChange' class="navigator"  data-index="{{index}}">
+          <!-- <view class='navImg'>
+            <image class='navImg' src='{{item.img}}'></image>
+          </view> -->
+          <view class="navigator-text" >{{item.value}}</view>
+          <view class="navigator-arrow" ></view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

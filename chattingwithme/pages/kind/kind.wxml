@@ -1,0 +1,54 @@
+<view class="container">
+  <view class="page-body">
+    <view class="tabTit box">
+      <view class="flex1{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="type" data-index="{{index}}" bindtap="filterTab">
+        <text>{{item}}</text>
+        <image src="../../images/arrow_down.png"></image>
+      </view>
+    </view>
+    <!--筛选项-->
+    <view class="tabLayer" hidden="{{tab[0]}}">
+      <text class="{{type_id==0?'active':''}}" data-id="0" data-index="0" data-txt="类型" bindtap="filter">不限</text>
+      <text class="{{type_id==item.id?'active':''}}" wx:for="{{nav}}" wx:key="item.id" wx:for-item="item" data-id="{{item.id}}" data-index="0" data-txt="{{item.name}}" bindtap="filter">{{item.name}}</text>
+    </view>
+    <view class="tabLayer" hidden="{{tab[1]}}">
+      <text class="{{time_id==0?'active':''}}" data-id="0" data-index="1" data-txt="时间" bindtap="filter">不限</text>
+      <text class="{{time_id==1?'active':''}}" data-id="1" data-index="1" data-txt="时间优先" bindtap="filter">时间优先</text>
+    </view>
+    <view class="tabLayer" hidden="{{tab[2]}}">
+      <text class="{{price_id==0?'active':''}}" data-id="0" data-index="2" data-txt="价格" bindtap="filter">不限</text>
+      <text class="{{price_id==1?'active':''}}" data-id="1" data-index="2" data-txt="从高到低" bindtap="filter">从高到低</text>
+      <text class="{{price_id==2?'active':''}}" data-id="2" data-index="2" data-txt="从低到高" bindtap="filter">从低到高</text>
+    </view>
+    <view class="tabLayer" hidden="{{tab[3]}}">
+      <text class="{{distance_id==0?'active':''}}" data-id="0" data-index="3" data-txt="距离" bindtap="filter">不限</text>
+      <text class="{{distance_id==1?'active':''}}" data-id="1" data-index="3" data-txt="距离优先" bindtap="filter">距离优先</text>
+
+    </view>
+    <!-- 下面列表 -->
+    <view class="container">
+      <view class='with100' wx:for="{{classifyListTen}}" wx:key="*this">
+        <view class='flex-start paddingtop12'>
+          <view class='headImgView '>
+            <image class='headImg' src="{{item.imgUrl!=null?item.imgUrl[0]:''}}"></image>
+          </view>
+          <view class='contentmglf font14 gray'>
+            <view class='height25'>时间：{{item.time}}</view>
+            <view class='height25'>类型：{{item.label}}</view>
+            <view class='height25'>标题：{{item.title}}</view>
+            <view class='height25 course-name'>内容：{{item.content}}</view>
+            <view class='height25'>总价：{{item.price}}</view>
+          </view>
+        </view>
+        <view class='flex-end font13' bindtap='takein' data-index="{{item.id}}">
+          <view class='look gray'>接受订单</view>
+        </view>
+      </view>
+
+    </view>
+
+    <block wx:if="{{classifyListTen.length==0}}">
+      <view class='nodata'>暂无数据</view>
+    </block>
+  </view>
+</view>

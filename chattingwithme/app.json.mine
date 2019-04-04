@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/publish/publish",
+    "pages/orderform/orderform",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/kind/kind",
+    "pages/user/user",
+    "pages/address/address",
+    "pages/nav/nav",
+    "pages/detail/detail",
+    "pages/myprofile/myprofile",
+    "pages/search/search",
+    "pages/authorize/authorize",
+    "pages/withsomeone/withsomeone",
+    "pages/downloadapp/downloadapp",
+    "pages/pay/pay"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F88396",
+    "navigationBarTitleText": "陪我吧",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F88396"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#f66",
+    "backgroundColor": "#ccc",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/kind/kind",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+}

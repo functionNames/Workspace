@@ -1,0 +1,44 @@
+<!--pages/detail/detail.wxml-->
+<view class="header">
+
+  <view wx:if="{{imgurl==''}}" class='noimage'></view>
+  <view wx:if="{{imgurl!=''}}" class='noimage'>
+    <image src="{{ imgurl }}" />
+  </view>
+
+
+  <view class="content">
+    <view class="top">
+      <view class="name">{{ name }}</view>
+      <view class="ageid">
+        <view class="age">{{ age }}岁</view>
+        <view class="idencard">身份认证</view>
+      </view>
+      <view class="addtime">
+        <view class="address">地区</view>
+        <view class="time">1个小时前</view>
+      </view>
+      <view class="talk">{{ personalizedSignature }}</view>
+      <navigator url="../downloadapp/downloadapp" class="chat font15 height20">聊天</navigator>
+    </view>
+    <view class="bottom">
+      <view class="tel">电话: {{ tel }}</view>
+      <view class="persontitlecontent">
+        <view class="person">
+
+          <image class='headimg' src="{{(!hasUserInfo && canIUse)?'../../images/headimg.png':userInfo.avatarUrl}}"></image>
+
+        </view>
+        <view class="titlecontent">
+          <view class="title">{{ title }}</view>
+          <view class='margintop17'><view class="contents font14 gray">{{ content }}</view></view>
+        </view>
+      </view>
+
+      <view class="price">{{ price }}元/小时</view>
+    </view>
+  </view>
+  <navigator url='../pay/pay' class='pay'>
+    立即下单
+  </navigator>
+</view>

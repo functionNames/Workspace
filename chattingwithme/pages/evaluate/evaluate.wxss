@@ -1,0 +1,44 @@
+page {
+  background-color: #f1f1f1;
+}
+
+.content {
+  background-color: #fff;
+  width: calc(100%-30px);
+  padding: 10px 15px;
+}
+
+.paddingleft15 {
+  padding: 0px 15px;
+}
+
+.inpbgc {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.textarea {
+  font-size: 28rpx;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  padding-top: 8px;
+}
+.textarea2 {
+  font-size: 28rpx;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  padding-top: 8px;
+}
+.imgview{
+  width:80px;
+height:72px;
+
+}
+.img{
+  width:60px;
+height:60px;
+
+}

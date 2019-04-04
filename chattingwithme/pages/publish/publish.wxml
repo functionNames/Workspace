@@ -1,0 +1,117 @@
+<view class="container">
+  <view class="page-body">
+    <view class='paddingleftr15'>
+      <form bindsubmit="formBindsubmit" bindreset="formReset">
+        <view>
+          <view class="height60 font18 flex-start">
+            <view class='imgview'>
+              <image class='imageadd' src="../../images/title.png"></image>
+            </view>
+            <view class='font17 titles'>标题</view>
+          </view>
+          <view>
+            <view class='paddingleft15 inpbgc'>
+              <input class=' font14 height30' maxlength="10" value='{{title}}' name="text" placeholder="请输入标题" />
+            </view>
+          </view>
+        </view>
+        <view>
+          <view class="height60 font18 flex-start">
+            <view class='imgview'>
+              <image class='imageadd' src="../../images/picture.png"></image>
+            </view>
+            <view class='font17 titles'>图片</view>
+          </view>
+          <view bindtap='choose'>
+            <view wx:if="{{pics.length==0}}" class='uplImg uplImgBk'>
+              <view class='imgadd'>
+                <image class='imgaddjia ' src="../../images/imgadd.png"></image>
+              </view>
+            </view>
+            <view wx:if="{{pics.length!=0}}" class='uplImg flex-start'>
+              <block>
+                <view class='imgaddshow' wx:for="{{pics}}" wx:for-item="image">
+                  <image class='imgaddshow' src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+                </view>
+              </block>
+            </view>
+          </view>
+        </view>
+        <view>
+          <view class="height60 font18 flex-start">
+            <view class='imgview'>
+              <image class='imageadd' src="../../images/content.png"></image>
+            </view>
+            <view class='font17 titles'>内容</view>
+          </view>
+          <view>
+            <view class='paddingleft15 inpbgc'>
+              <textarea class="textarea font14"  name="textarea" value="{{content}}" placeholder="{{placeholder}}" placeholder-class="placeholder" maxlength="{{maxlength}}" placeholder="请输入内容" auto-height="{{auto-height}}" show-confirm-bar="{{show-confirm-bar}}"></textarea>
+            </view>
+          </view>
+        </view>
+        <view>
+          <view class="height60 font18 flex-start">
+            <view class='imgview'>
+              <image class='imageadd' src="../../images/classify.png"></image>
+            </view>
+            <view class='font17 titles'>分类</view>
+          </view>
+          <view>
+            <picker mode="selector" range="{{select}}" value="{{selectindex}}" bindchange="listenerPickerSelected">
+              <view class='text-align inpbgc gray font14 height35 picker'>{{selectindex==''?'分类选择': select[selectindex]}}</view>
+
+            </picker>
+          </view>
+        </view>
+        <view>
+          <view class="height60 font18 flex-start">
+            <view class='imgview'>
+              <image class='imageadd' src="../../images/label.png"></image>
+            </view>
+            <view class='font17 titles'>标签</view>
+          </view>
+          <view>
+            <view class='paddingleft15 inpbgc'>
+              <input class=' font14 height30' name="label" value='{{label}}' placeholder="请输入标签" />
+            </view>
+          </view>
+
+        </view>
+
+        <view>
+          <view class="height60 font18 flex-start">
+            <view class='imgview'>
+              <image class='imageadd' src="../../images/money.png"></image>
+            </view>
+            <view class='font17 titles'>金额</view>
+          </view>
+          <view>
+            <view class='paddingleft15 inpbgc'>
+              <input class=' font14 height30' type="number" name="pay" value='{{price}}' placeholder="请输入金额" />
+            </view>
+          </view>
+
+        </view>
+        <view>
+          <view class="height60 font18 flex-start">
+            <view class='imgview'>
+              <image class='imageadd' src="../../images/time.png"></image>
+            </view>
+            <view class='font17 titles'>时长</view>
+          </view>
+          <view>
+            <view class='paddingleft15 inpbgc'>
+              <input class=' font14 height30' type="number" value='{{time}}' name="time" placeholder="请输入时长" />
+            </view>
+          </view>
+
+        </view>
+        <view class="button justify-center margintopbot40 ">
+          <button class='ticketBtn confrim titles' formType="submit">提交</button>
+          <button class='ticketBtn reset white' formType="reset">重置</button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

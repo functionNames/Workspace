@@ -1,0 +1,27 @@
+<view class="container">
+  <!--定义页面结构，使用文本组件或其他组件 -->
+    <ul>
+		<li>
+			<span>{{city}}：</span>
+			<span>{{cityData}}</span>
+		</li>
+		<li>
+			<span>{{weather}}：</span>
+			<span>{{weatherData}}</span>
+		</li>
+		<li>
+			<span>{{temperature}}：</span>
+			<span>{{temperatureData}}</span>
+			<span>°C</span>
+		</li>
+		<li>
+			<span>风速：</span>
+			<span>{{winddirection}}</span>
+			<span>{{windpower}}</span>
+		</li>
+		<li>
+			<span>{{humidity}}：</span>
+			<span>{{humidityData}}</span>
+		</li>
+	</ul>
+</view>

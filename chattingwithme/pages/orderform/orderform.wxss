@@ -1,0 +1,78 @@
+/* pages/orderform/orderform.wxss */
+
+page {
+  background-color: #f1f1f1;
+}
+
+.orderNav {
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  background-color: #fff;
+  /* color: #aaa; */
+  font-size: 13px;
+  position: fixed;
+  width: 100%;
+}
+
+.orderNav view {
+  width: calc(100%/4);
+}
+
+.orderNavChg {
+  color: #f88396;
+  border-bottom: 3px solid #f88396;
+}
+
+.margintop45 {
+  margin-top: 45px;
+  padding: 20px 7px 0px 7px;
+}
+
+.contenteach {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 10px 20px 10px;
+}
+
+.look {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  height: 28px;
+  line-height: 28px;
+  width: 68px;
+  text-align: center;
+}
+
+/* 头像 */
+
+.headImgView {
+width:100px;
+border-radius:8px;
+margin-top:10px;
+
+}
+
+.headImg {
+width:100px;
+height:91%;
+border-radius:3px;
+margin-left:7px;
+
+}
+.contentmglf{
+  margin-left: 20px;
+}
+
+.course-name {
+  word-break: break-all; /*允许在单词内换行*/
+  text-align: left;
+ 
+  line-height: 45rpx;
+  text-overflow: -o-ellipsis-lastline; /*css3中webkit内核提供的一个方法类似ellipsis*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; /*自适应盒子*/
+  -webkit-line-clamp: 1; /*此处为1行,如果是两行就改成2*/
+  -webkit-box-orient: vertical;
+}

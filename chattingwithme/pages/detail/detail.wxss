@@ -1,0 +1,194 @@
+/* pages/detail/detail.wxss */
+
+page {
+  background-color: #f5f9fc;
+}
+
+.headerbigimage {
+  height: 330px;
+  width: 375px;
+}
+
+.noimage {
+  height: 330px;
+  width: 375px;
+  background-color: #f1f1f1;
+}
+
+.noimage image {
+  height: 330px;
+  width: 375px;
+}
+
+.header .content {
+  position: relative;
+}
+
+.header .content .top {
+  width: 95%;
+  height: 96px;
+  /* border: 1px solid forestgreen; */
+  position: absolute;
+  top: -43px;
+  left: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+}
+
+.header .top .ageid {
+  display: flex;
+}
+
+.header .top .name {
+  color: rgb(47, 47, 47);
+  font-size: 13px;
+  font-family: "microsoft yahei";
+  margin: 5px 0 5px 16px;
+}
+
+.age {
+  /* height: 13px;
+	width: 32px; */
+  padding: 2px 11px;
+  background: #ff78bb;
+  margin-left: 16px;
+  font-size: 10px;
+  color: #fff;
+  font-family: "microsoft yahei";
+  border-radius: 10px;
+}
+
+.idencard {
+  padding: 2px 11px;
+  background: #1d9aff;
+  margin-left: 16px;
+  font-size: 10px;
+  color: #fff;
+  font-family: "microsoft yahei";
+  border-radius: 15px;
+}
+
+.addtime {
+  display: flex;
+  margin-left: 16px;
+}
+
+.address {
+  color: rgb(154, 154, 154);
+  font-size: 14px;
+  padding-right: 6px;
+  border-right: 1px solid rgb(154, 154, 154);
+}
+
+.time {
+  color: rgb(154, 154, 154);
+  font-size: 14px;
+  padding-left: 6px;
+}
+
+.talk {
+  margin-left: 16px;
+  color: rgb(154, 154, 154);
+  font-size: 14px;
+}
+
+.chat {
+  position: absolute;
+  top: 21px;
+  right: 13px;
+  padding: 2px 13px;
+  border: 1px solid rgb(29, 154, 255);
+  color: rgb(29, 154, 255);
+  border-radius: 3px;
+}
+
+.tel {
+  margin-left: 16px;
+  margin-top: 6px;
+  color: rgb(154, 154, 154);
+  font-size: 14px;
+}
+
+.persontitlecontent {
+  display: flex;
+}
+
+.person {
+  width: 52px;
+  height: 52px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 16px;
+}
+
+.title {
+  margin-left: 10px;
+  color: rgb(154, 154, 154);
+  font-size: 14px;
+}
+
+.contents {
+  margin-left: 10px;
+  width: 160px;
+  height: 47px;
+  /* background: red; */
+  display: -webkit-box; /* 定义为自适应布局 */
+  word-break: break-all; /* 换行模式 */
+  text-overflow: ellipsis; /* 超出文字用省略号代替 */
+  overflow: hidden; /* 多出部分隐藏 */
+  -webkit-box-orient: vertical; /* 竖直方向的超出和隐藏 */
+  -webkit-line-clamp: 2; /* 设定行数为2 */
+}
+
+.price {
+  position: absolute;
+  top: 47px;
+  right: 6px;
+  color: rgb(29, 154, 255);
+}
+
+.header .content .bottom {
+  position: absolute;
+  top: 68px;
+  left: 8px;
+  width: 95%;
+  margin: 0 auto;
+  height: 115px;
+  /* border: 1px solid forestgreen; */
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.pay {
+  position: fixed;
+  width: 90%;
+  height: 46px;
+  background: rgba(8, 139, 241, 0.86);
+  border-radius: 5px;
+  bottom: 18px;
+  left: 5%;
+  text-align: center;
+  line-height: 46px;
+  color: rgb(255, 255, 255);
+}
+
+.headimg {
+  height: 51px;
+  width: 51px;
+  border-radius: 50%;
+}
+
+.head {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+.margintop17{
+  margin-top:17px;
+}

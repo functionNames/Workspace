@@ -1,0 +1,8 @@
+<!--pages/downloadapp/downloadapp.wxml-->
+<view class='content'>
+  <view class='erweima'>二维码</view>
+  <view class='haha'>
+    <span>为了您体验更好的功能</span>  
+    <span>请扫描上方二维码下载APP</span>
+  </view>
+</view>

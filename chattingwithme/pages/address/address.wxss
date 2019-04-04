@@ -1,0 +1,20 @@
+/* pages/address/address.wxss */
+.container{
+  height: 100%;
+  background: #F88396;
+  color: #fff;
+  font-size: 18px;
+	margin: 0 auto;
+}
+ul {
+	width: 100%;
+	height: 900rpx;
+	margin: 100rpx auto;
+	display: flex;
+	flex-direction: column;
+	
+}
+.container li{
+	margin: 0 auto;
+	padding: 22px 0;
+}

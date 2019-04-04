@@ -1,0 +1,46 @@
+/* pages/myprofile/myprofile.wxss */
+
+/* page {
+  background-color: #f1f1f1;
+} */
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  border-top: 0.5px solid #eaeaea;
+  border-bottom: 0.5px solid #eaeaea;
+  margin-top:0px;
+}
+
+.height49, .height49 input {
+  height: 49px;
+  line-height: 49px;
+}
+
+
+
+.alltext {
+  position: relative;
+  width: 67%;
+}
+
+.alltext label {
+  width: 30%;
+}
+
+.paddingleft15 {
+  padding-left: 15px;
+}
+
+.fontwidth100 {
+  width: 80px;
+}
+.titlelbcolor{
+  color:#626262
+}
+
+
+radio{
+  transform:scale(0.85);
+  display:inline-block;
+}

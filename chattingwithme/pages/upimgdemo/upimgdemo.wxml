@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="page-body">
+    <view >上传案例</view>
+    <view bindtap='choose'>点击上传图片</view>
+    <view bindtap='confirm'>发布</view>
+  </view>
+</view>

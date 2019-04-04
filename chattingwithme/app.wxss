@@ -1,0 +1,299 @@
+/**app.wxss**/
+
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+  font-size: 32rpx;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+view{
+  margin: 0;
+  padding: 0;
+}
+.page-body {
+  width: 100%;
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+
+page {
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+}
+
+/* 上下边框 */
+.borderBottom {
+  border-bottom: 1px solid #eaeaea;
+}
+.borderTop{
+  border-top: 1px solid #eaeaea;
+}
+
+
+/* flex弹性布局 */
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 主题颜色 */
+
+.themeColor {
+  background-color: #F88396;
+}
+.fontColor {
+  color: #F88396;
+}
+.gray {
+  color: #6d6d6d;
+}
+/* 发布标题 */
+.titles{
+  color: #2f2f2f;
+}
+.black{
+  color: black;
+}
+.green{
+  color:#26BB23;
+}
+.white{
+  color: white;
+}
+.blue{
+  color: #3684e8;
+}
+.text-align{
+  text-align: center;
+}
+/* 字体大小 */
+
+.font12 {
+  font-size: 12px;
+}
+
+.font13 {
+  font-size: 13px;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.font15 {
+  font-size: 15px;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.font17 {
+  font-size: 17px;
+}
+
+.font18 {
+  font-size: 18px;
+}
+
+.font19 {
+  font-size: 19px;
+}
+
+.font20 {
+  font-size: 20px;
+}
+
+.font21 {
+  font-size: 21px;
+}
+
+/* 文本框高度 */
+.height20{
+  height: 20px;
+  line-height: 20px;
+}
+.height25{
+  height: 25px;
+  line-height: 25px;
+}
+.height30{
+  height: 30px;
+  line-height: 30px;
+}
+
+.height35{
+  height: 35px;
+  line-height: 35px;
+}
+.height40 {
+  height: 40px;
+  line-height: 40px;
+}
+.height60{
+  height: 60px;
+  line-height: 60px;
+}
+.height50{
+  height: 50px;
+  line-height: 50px;
+}
+.marginbottom20 {
+  margin-bottom: 20px;
+}
+.paddingtop12 {
+  padding-top: 12px;
+}
+.borderBottom {
+  border-bottom: 1px solid #eaeaea;
+}
+.borderTop{
+  border-top: 1px solid #eaeaea;
+}
+
+.navigator-box {
+  opacity: 0;
+  position: relative;
+  background-color: #fff;
+  line-height: 1.41176471;
+  font-size: 34rpx;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.navigator-box-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navigator {
+  padding: 20rpx 30rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navigator:before {
+  content: " ";
+  position: absolute;
+  left: 30rpx;
+  top: 0;
+  right: 30rpx;
+  height: 1px;
+  border-top: 1rpx solid #d8d8d8;
+  color: #d8d8d8;
+}
+
+.navigator:first-child:before {
+  display: none;
+}
+
+.navigator-text {
+  flex: 1;
+}
+
+.navigator-arrow {
+  padding-right: 26rpx;
+  position: relative;
+}
+
+.navigator-arrow:after {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 2rpx 2rpx 0 0;
+  border-color: #888;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -8rpx;
+  right: 28rpx;
+}
+
+/* 暂无资料 */
+.nodata {
+  height: 410px;
+  line-height: 410px;
+  text-align: center;
+  font-size: 20px;
+  color: #bfbfbf;
+  background-color: #f1f1f1;
+}
+
+/* 字多变、、、 */
+.course-name {
+  word-break: break-all; /*允许在单词内换行*/
+  text-align: left;
+  
+  line-height: 45rpx;
+  text-overflow: -o-ellipsis-lastline; /*css3中webkit内核提供的一个方法类似ellipsis*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; /*自适应盒子*/
+  -webkit-line-clamp: 1; /*此处为1行,如果是两行就改成2*/
+  -webkit-box-orient: vertical;
+}
+/* mengchao */
+.course-name{
+  display: -webkit-box;            /* 定义为自适应布局 */
+  word-break: break-all;           /* 换行模式 */
+  text-overflow: ellipsis;         /* 超出文字用省略号代替 */
+  overflow: hidden;                /* 多出部分隐藏 */
+  -webkit-box-orient: vertical;    /* 竖直方向的超出和隐藏 */
+  -webkit-line-clamp: 1;           /* 设定行数为2 */
+}
+/* 我的信息保存按钮和评价提交按钮 */
+.submitbtn {
+  width: 90%;
+  height: 40px;
+  background-color: #F88396;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 40px;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+

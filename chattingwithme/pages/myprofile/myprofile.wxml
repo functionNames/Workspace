@@ -1,0 +1,104 @@
+<view class="container">
+  <view class="page-body">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view>
+      </view>
+      <view class='content' bindtap='mypftrigger' data-index="0">
+        <view class="height60 font18 {{indexColor==0?'fontColor':'titlelbcolor'}}">个人签名</view>
+        <view class='paddingleft15 gray'>
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>签名</view>
+            <view class='alltext font15  colors'>
+              <input name='personalized_signature' value='{{personalList.personalized_signature}}' placeholder="请输入你的个人签名"> </input>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='content' bindtap='mypftrigger' data-index="1">
+        <view class="height60 font18  {{indexColor==1?'fontColor':'titlelbcolor'}}">我的信息</view>
+        <view class='paddingleft15 gray'>
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>用户名</view>
+            <view class='alltext font15  colors'>
+              <input name='userName' value='{{personalList.userName}}' placeholder="请输入用户名"> </input>
+            </view>
+          </view>
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100 '>姓名</view>
+            <view class='alltext font15  colors'>
+              <input name='name' value='{{personalList.name}}' placeholder="请输入姓名"> </input>
+            </view>
+          </view>
+
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>年龄</view>
+            <view class='alltext font15  colors'>
+              <input name='age' value='{{personalList.age}}' placeholder="请输入年龄"> </input>
+            </view>
+          </view>
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>性别</view>
+            <view class='alltext font15'>
+              <radio-group class='flex-start' bindchange='radioChange2' name="sex">
+                <label wx:for="{{sexList}}" wx:key="*this">
+                  <view>
+                    <radio color='#F88396' value="{{item.text}}" checked="{{item.checked}}" />{{item.text}}
+                  </view>
+                </label>
+              </radio-group>
+            </view>
+          </view>
+
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>身高</view>
+            <view class='alltext font15  colors'>
+              <input name='height' value='{{personalList.height}}' placeholder="请输入身高"> </input>
+            </view>
+          </view>
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>电话</view>
+            <view class='alltext font15  colors'>
+              <input name='tel' value='{{personalList.tel}}' placeholder="请输入电话"> </input>
+            </view>
+          </view>
+          <!-- <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>微信号</view>
+            <view class='alltext font15  colors'>
+              <input name='wxnumber' value='{{personalList.wxnumber}}' placeholder="请输入微信号"> </input>
+            </view>
+          </view> -->
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>性格</view>
+            <view class='alltext font15  colors'>
+              <input name='characters' value='{{personalList.characters}}' placeholder="请输入性格"> </input>
+            </view>
+          </view>
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>学历</view>
+            <view class='alltext font15  colors'>
+              <input name='education' value='{{personalList.education}}' placeholder="请输入学历"> </input>
+            </view>
+          </view>
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>特长</view>
+            <view class='alltext font15 colors'>
+              <input name='speciality' value='{{personalList.speciality}}' placeholder="请输入特长"> </input>
+            </view>
+          </view>
+
+
+          <view class='flex-start height49'>
+            <view class='font15 fontwidth100'>身份证</view>
+            <view class='alltext font15  colors'>
+              <input name='idCard' value='{{personalList.idCard}}' placeholder="请输入身份证"> </input>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view>
+        <button class='submitbtn' formType="submit">保存</button>
+      </view>
+    </form>
+
+  </view>
+</view>
