@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery点击弹出登录注册表单代码 - 站长素材</title>
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/login.css" />
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function() {
+		//打开会员登录 
+		$("#Login_start_").click(function() {
+			$("form").hide();
+			$("#_close").show();
+			$("#_start").animate({
+				left: '350px',
+				height: '520px',
+				width: '400px'
+			}, 500, function() {
+				$("#form").show(500);
+				$("#_close").animate({
+					height: '40px',
+					width: '40px'
+				}, 500);
+			});
+		});
+		//关闭
+		$("#_close").click(function() {
+			
+			$("#_close").animate({
+				height: '0px',
+				width: '0px'
+			}, 500, function() {
+				$("#_close").hide(500);
+				$("form").hide(500);
+				// $("#regist_container").hide(500);
+				$("#_start").animate({
+					left: '0px',
+					height: '0px',
+					width: '0px'
+				}, 500);
+			});
+		});
+		
+	});
+</script>
+
+</head>
+<body style="background-color: #000000;">
+
+<center>
+<a id="Login_start_" class="btn btn-danger">登陆</a>
+
+</center>
+
+<!-- 会员登录  -->
+<div id='Login_start' style="position: fixed;" >
+	<div id='_start'>
+		<div id='_close' style="display: none;">
+			<span class="glyphicon glyphicon-remove"></span>
+		</div>
+		<br /> 
+		
+	</div>
+
+</div>
+</body>
+</html>

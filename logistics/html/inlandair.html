@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../common/common.css" />
+		<link rel="shortcut icon" href="http://www.zhaotexiao.com/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/menus.css" />
+		<link rel="stylesheet" type="text/css" href="../css/detail.css" />
+		<link rel="stylesheet" type="text/css" href="../css/sea.css"/>
+		<style>
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<img src="../img/airbanner.jpg" style="height: 400px;width: 100%;">
+		</div>
+		<div class="content_wrap">
+			<div class="list">
+					<ul class="yiji">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="#">综合物流</a></li>
+						<li><a data-url="internationalair.html" class="inactive">空运</a>
+							<ul style="display: block">
+								<li><a data-url="internationalair.html" class="inactive">国际空运</a>
+									<ul style="display: none">
+										<li><a href="#">空运介绍</a></li>
+										<li><a href="#">国际空运流程</a></li>
+									</ul>
+								</li> 
+								<li class="last">
+									<a data-url="inlandair.html" class="inactive active">国内空运</a>
+									<ul style="display: block">
+										<li><a href="#1">国内服务</a></li>
+										<li><a href="#2">物流服务定制</a></li>
+										<li><a href="#3">托运须知</a></li>
+										<li><a href="#4">在线订舱</a></li>
+				
+									</ul>
+								</li> 
+							</ul>
+						</li>
+						<li><a data-url="sea.html" class="inactive sea">海运</a>
+							<ul style="display: none">
+								
+										<li><a href="#1">注意事项</a></li>
+										<li><a href="#2">服务定制</a></li>
+										<li><a href="#3">海运介绍</a></li>
+										<li><a href="#4">业务范围</a></li>
+										<li><a href="#5">操作流程</a></li>
+							</ul>
+						</li>
+						
+				
+						<li>
+							<a data-url="landfreight.html" class="inactive">陆地货运</a>
+							<ul style="display: none">
+								<li><a href="#" class="">服务特色</a></li>
+								<li><a href="#" class="">操作流程</a></li>  
+								<li><a href="#" class="">注意事项</a></li> 
+								<li><a href="#" class="">服务定制</a></li> 
+								<li><a href="#" class="">在线服务</a></li> 
+							</ul>
+						</li>
+						<li>
+							<a data-url="railfreight.html" class="inactive">铁路货运</a>
+							<ul style="display: none">
+								<li><a href="#" class="">介绍</a></li>
+								<li><a href="#" class="">操作流程</a></li>  
+								<li><a href="#" class="">注意事项</a></li> 
+								 
+							</ul>
+						</li>
+						<li>
+							<a data-url="automotivelogistics.html" class="inactive">汽车物流</a>
+							<ul style="display: none">
+								<li><a href="#" class="">介绍</a></li> 
+								<li><a href="#" class="">服务特色</a></li>
+								<li><a href="#" class="">操作流程</a></li>  
+								<li><a href="#" class="">注意事项</a></li> 
+								 
+							</ul>
+						</li>
+						<li>
+							<a data-url="wh.html" class="inactive">仓储</a>
+							<ul style="display: none">
+								<li><a href="#" class="">仓储服务</a></li>
+								<li><a href="#" class="">服务内容</a></li>  
+								<li><a href="#" class="">在线管理</a></li> 
+							</ul>
+						</li>
+					</ul>
+			</div>
+			<div class="content">
+				<h1 class="gongtongs">国内空运</h1>
+				<p class="gongtongs">
+					隆曦物流公司自主经营承包代办全国各地机场的国航、东航、南航、深航、海航、厦航、山航等各大航空公司
+					货运代理包机包舱业务。公司依托各机场设有专门的调度中心，采用全网络统一管理，为您在货物发送时间调
+					配最合理,最快的航班时间，在行业中首度对客户推出“限时未达,全额退款”承诺。常年提供全国机场范围内二
+					三线县市当天航班6-24小时各类普货、礼品特殊产品、贵重高端产品、鲜活、冻品鲜货、宠物活体动物、行李
+					、标书、护照等随机加急件全方位港到港、门到港、港到门、门到门一条龙服务。
+				</p>
+				<p class="gongtongs">
+					空运出发城市：南京、无锡、北京、上海、广州、深圳等123个机场。
+					空运到达城市：全国机场城市可到，支持全国机场范围内二三线县市派送、部分城市可货到付款服务。
+				</p>
+			</div>
+			<div class="rightbottom">
+				<!-- 回到顶部 -->
+				<div class="returntops">回到<br>顶部</div>
+			</div>
+		<!-- 引入 jQuery -->
+		<script type="text/javascript" src="../common/jquery-1.4.2.min.js"></script>
+		<script src="../js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../common/main.js"></script>
+		
+		</div>
+		<div class="content_bottom"><img src="../img/banners2.jpg" ></div>
+		<div class="airknow"></div>
+
+		<!-- 点击左侧跳转 -->
+		<script>
+		$(".inactive").click(function(){
+			setTimeout( () => {
+				location = $(this).attr("data-url")
+			},1000)
+		})
+		$(function(){
+			$('.returntops').click(function(){
+				$('html , body').animate({scrollTop: 0},'slow');
+			});
+		 });
+		</script>
+	</body>
+	<!-- 统计代码 start -->
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol +
+			"hm.baidu.com/h.js%3F96790c81142777e7724407f030936c10' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<!-- 统计代码 end -->
+</html>

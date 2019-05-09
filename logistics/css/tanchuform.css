@@ -1,0 +1,88 @@
+.rightbottom{
+	position: fixed;
+	
+	display: flex;
+	flex-direction: row;
+}
+#Regist_start_{
+	position: fixed;
+	right: 0;
+	bottom: 170px;
+	width: 70px;
+	height: 70px;
+	background: #6E93BA;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#_start {
+	/*position:absolute;*/
+	height: 0px;
+	width: 0px;
+	background: #D6E9C6;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+#_close {
+	float: right;
+	height: 0px;
+	width: 0px;
+	background: none;
+	color: white;
+	border-left: 1px solid white;
+	border-bottom: 1px solid white;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+#regist_container span{
+	color: #000000;
+	font-size: 14px;
+	font-weight: 600;
+	
+}
+#regist_container label{
+	color: #666666;
+	font-size: 16px;
+}
+#regist_container #formin{
+	margin-top: 20px;
+}
+#regist_container #formin label input{
+	height: 20px;
+	border: 0;
+}
+#regist_container .reslog{
+	margin: 20px auto;
+}
+#regist_container .reslog input{
+	width: 90px;
+	height: 30px;
+	background: #FFFFFF;
+	border: none;
+	color: #000000;
+}
+#regist_container .reslog input:first-child{
+	margin-right: 40px;
+}
+#regist_container .reslog input:hover{
+	color: red;
+	
+}
+
+
+
+
+
+
+
+

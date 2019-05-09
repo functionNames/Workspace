@@ -4,10 +4,9 @@
 	position: relative;
 }
 .banner{
-	background-image: url(../img/banner.jpg);
+	background: url(../img/index_bg.png) no-repeat;
 	background-size: 100% 100%;
 	width: 100%;
-	height: 1314px;
 	position: absolute;
 }
 .banner_in{
@@ -15,17 +14,22 @@
 }
 header{
 	display: flex;
+	width: 100%;
+	position: fixed;
+				
 }
 header img{
-	margin: 37px 1017px 120px 204px;
+	margin: 37px 0 10px 204px;
 }
 header .header_right{
-	margin-top: 65px;
+	margin-top: 63px;
+	position: fixed;
+	right: 5%;
 }
 header .header_right a{
 	font-family: "microsoft yahei";
 	font-size: 36px;
-	color: #ffffff;
+	color: black;
 }
 header .header_right a:first-child{
 	margin-right: 36px;
@@ -33,6 +37,7 @@ header .header_right a:first-child{
 
 .banner_in nav{
 	width: 398px;
+	margin-top: 250px;
 }
 
 .banner_in nav ul li{
@@ -59,84 +64,99 @@ header .header_right a:first-child{
 	margin-bottom: 88px;
 }
 .map_wrap .map{
-	height: 650px;
-	border: 1px solid #ccc;
+	/* height: 650px; */
+	/* border: 1px solid #ccc; */
 	padding: 0 379px 0 379px;
 	position: relative;
 }
-.map_wrap .world{
-	position: absolute;
-	left: 380px;
+.map_wrap .worlds{
+	background: url(../img/map/world.png) no-repeat center;
+	width: 100%;
+	height: 596px;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	
 }
 
 .map_wrap .map img{
 	display: none;
 }
 .map_wrap .map .ouzhou{
+	position: relative;
 	position: absolute;
-	left: 415px;
+	left: 21.4%;
 	top: 38px;
+	
+}
+.map_wrap .map .ouzhou span{
+	position: absolute;
+	top: 40px;
+	
+}
+.map_wrap .map .ouzhou:hover{
+	
 }
 
 .map_wrap .map .dulianti{
 	position: absolute;
-	left: 526px;
+	left: 27.17%;
 	top: 14px;
+	/* display: block; */
 }
 .map_wrap .map .beimei{
 	position: absolute;
-	left: 1056px;
+	left: 55%;
+	
 }
-.map_wrap .map .zhongdong{
-	position: absolute;
-	left: 540px;
-	top: 159px;
-}
-
 .map_wrap .map .nanya{
 	position: absolute;
-	left: 652px;
+	left: 33.73%;
 	top: 146px;
+	
 }
 .map_wrap .map .feizhou{
 	position: absolute;
-	left: 380px;
+	left: 19.5%;
 	top: 175px;
+	
 }
 .map_wrap .map .zhongdong{
 	position: absolute;
-	left: 542px;
-	top: 148px;
+	left: 27.85%;
+	top: 149px;
+	
 }
 .map_wrap .map .beiya{
 	position: absolute;
 	top: 108px;
-	left: 742px;
+	left: 38.5%;
+	/* display: block; */
 }
 .map_wrap .map .china{
 	position: absolute;
 	top: 106px;
-	left: 706px;
+	left: 696px;
+	/* display: block; */
 }
 .map_wrap .map .dongmeng{
 	position: absolute;
 	top: 238px;
-	left: 786px;
+	left: 776px;
 }
 .map_wrap .map .aozhou{
 	position: absolute;
 	top: 342px;
-	left: 858px;
+	left: 848px;
 }
 .map_wrap .map .zhongmei{
 	position: absolute;
 	top: 256px;
-	left: 1212px;
+	left: 1202px;
 }
 .map_wrap .map .nanmei{
 	position: absolute;
 	top: 280px;
-	left: 1248px;
+	left: 1238px;
 }
 
 
@@ -156,4 +176,15 @@ header .header_right a:first-child{
 	padding-right: 20px;
 	
 }
-	
+.returntop{
+	position: fixed;
+	right: 0;
+	bottom: 100px;
+	width: 70px;
+	height: 70px;
+	background: #6E93BA;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

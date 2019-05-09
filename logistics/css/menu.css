@@ -21,8 +21,9 @@ img {
 a {
 	text-decoration: none;
 	outline: none;
-	blr: expression(this.onFocus=this.blur());
+	
 }
+
 
 .clear {
 	clear: both;
@@ -40,7 +41,7 @@ a {
 	margin-left: 198px;
 	margin-top: 74px;
 	border-right: 14px solid #EBEBEB;
-	
+	overflow-y: scroll;
 }
 
 .ce li {
@@ -76,7 +77,6 @@ a {
 .er {
 	display: none;
 	width: 296px;
-	
 }
 
 .er li {
@@ -134,6 +134,9 @@ a {
 
 .er .e_li .thr li .xuan {
 	
+}
+.four {
+	width: 256px;
 }
 
 .more1 {

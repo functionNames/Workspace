@@ -1,0 +1,58 @@
+*{margin: 0;padding: 0}
+li{list-style: none;}
+a{text-decoration-skip: none}
+body{font-size: 12px;font-family: "宋体","微软雅黑";}
+ul,li{list-style: none;}
+a:link,a:visited{text-decoration: none;}
+/* .list{width: 210px;border-bottom:solid 1px #316a91;margin:40px auto 0 auto;} */
+.list ul li{ }
+.list ul li a{
+	padding-left: 10px;color: #000000; font-size:12px; display: block; font-weight:bold; height:36px;line-height: 36px;position: relative;
+}
+.list ul li div{
+	padding-left: 10px;color: #000000; font-size:12px; display: block; font-weight:bold; height:36px;line-height: 36px;position: relative;
+}
+.list ul li ul li div{ padding-left:20px;}
+.list ul li ul li ul li div{ color:#000000; padding-left:30px;}
+.list .yiji li ul li ul li ul li div{ color: #7C7C7C }     /* //最后一层的a */
+.list ul li .inactive{ background:url(../img/menu/off.png) no-repeat 280px center;}
+.list ul li .inactives{background:url(../img/menu/on.png) no-repeat 280px center;} 
+.list ul li ul{display: none;}
+.list ul li ul li { border-left:0; border-right:0; border-color:#467ca2;}
+.list ul li ul li ul{display: none;}
+.list ul li ul li a{ padding-left:20px;}
+.list ul li ul li ul li { border-color:#6196bb; }
+.last{ border-color:#6196bb; }
+.list ul li ul li ul li a{ color:#000000; padding-left:30px;}
+.list .yiji li ul li ul li ul li a{ color: #7C7C7C }     /* //最后一层的a */
+/* CSS Document */
+
+
+html,
+body {
+	height: 100%;
+}
+
+img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+.clear {
+	clear: both;
+}
+.content_wrap{
+	margin-bottom: 77px;
+}
+
+.content_wrap .list .yiji{
+	display: block;
+	width: 337px;
+	/* height: 777px; */
+	background: #F8F8F8;
+	z-index: 5;
+	margin-left: 198px;
+	margin-top: 74px;
+	border-right: 14px solid #EBEBEB;
+	/* border-bottom:solid 1px #316a91; */
+}

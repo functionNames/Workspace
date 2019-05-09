@@ -3,52 +3,123 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		
 		<link rel="stylesheet" type="text/css" href="../common/common.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/tanchuform.css"/>
 		<script src="../common/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <script src="../common/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../common/index.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="https://cdn.bootcss.com/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+		<!-- 弹出表单js部分 -->
+		<script>
+			$(document).ready(function() {
+				var h=document.documentElement.clientHeight;
+				$('.banner').height(h+'px');
+				//打开会员注册
+				$("#Regist_start_").click(function() {
+					$("#login_container").hide();
+					$("#_close").show();
+					$("#_start").animate({
+						height: '620px',
+						width: '610px'
+					}, 500, function() {
+						$("#regist_container").show(500);
+						$("#_close").animate({
+							height: '40px',
+							width: '40px'
+						}, 500);
+					});
+				});
+				//关闭
+				$("#_close").click(function() {
+					
+					$("#_close").animate({
+						height: '0px',
+						width: '0px'
+					}, 500, function() {
+						$("#_close").hide(500);
+						$("#login_container").hide(500);
+						$("#regist_container").hide(500);
+						$("#_start").animate({
+							left: '0px',
+							height: '0px',
+							width: '0px'
+						}, 500);
+					});
+				});
+				//去 注册
+				$("#toRegist").click(function(){
+					$("#login_container").hide(500);
+					$("#regist_container").show(500);
+				});
+			});
+			$(document).scroll(function() {
+				var scroH = $(document).scrollTop();  //滚动高度
+// 				var viewH = $(window).height();  //可见高度 
+// 				var contentH = $(document).height();  //内容高度
+				
+			 
+				if(scroH >150 && scroH<1280){  //距离顶部大于100px时
+					$('header').css({background:'rgba(0,0,0,0.5)'})
+					$('header .header_right a').css({'color':'#ffffff'})
+					
+				}else if(scroH>1280){
+					$('header').css({'background':'#6E93BA'})
+					
+				}else{
+					$('header').css({'background':'none'}),
+					$('header').css({opacity:'10'})
+				}
+				
+				  
+			});
+	
+		</script>
 	</head>
 	<body>
 		<div class="banner_wrap">
 			<div class="banner"></div>
 			<div class="banner_in">
-				<header>
+				<header style="position: fixed;">
 					<img src="../img/logo.png" >
 					<div class="header_right">
-						<a href="">联系我们</a>
-						<a href="">帮助与支持</a>
+						<a href="help.html">帮助与支持</a>
 					</div>
 				</header>
 				<nav>
 					<ul>
 						<li><a class="two" href="">专业才能</a></li>
-						<li><a class="five" href="detail.html">空运</a></li>
-						<li><a class="five" href="detail.html">海运</a></li>
-						<li><a class="five" href="">陆运</a></li>
-						<li><a class="five" href="">汽车物流</a></li>
-						<li><a class="five" href="">仓储</a></li>
-						<li><a class="two" href="">关于我们</a></li>
-					</ul>
+						<li><a class="five" href="inlandair.html">空运</a></li>
+						<li><a class="five" href="sea.html">海运</a></li>
+						<li><a class="five" href="landfreight.html">陆运</a></li>
+						<li><a class="five" href="railfreight.html">铁路货运</a></li>
+						<li><a class="five" href="automotivelogistics.html">汽车物流</a></li>
+						<li><a class="five" href="wh.html">仓储</a></li>
+							<li class="aboutour"><a class="two" href="aboutour.html">关于我们</a></li>
+						</ul>
 				</nav>
 			</div>
 		</div>
 		<div class="map_wrap">
-			<!-- <img src="../img/map/world.png" > -->
 			<h1>服务网络</h1>
-			<img class="world" src="../img/map/world.png" >
-			<div class="map">
-				<img class="ouzhou" src="../img/map/ouzhou.png" >
-				<img class="dulianti" src="../img/map/dulianti.png" >
-				<img class="beimei" src="../img/map/beimei.png" >
-				<img class="zhongdong" src="../img/map/zhongdong.png" >
-				<img class="nanya" src="../img/map/nanya.png" >
-				<img class="china" src="../img/map/china.png" >
-				<img class="beiya" src="../img/map/beiya.png" >
-				<img class="feizhou" src="../img/map/feizhou.png" >
-				<img class="dongmeng" src="../img/map/dongmeng.png" >
-				<img class="zhongmei" src="../img/map/zhongmei.png" >
-				<img class="aozhou" src="../img/map/aozhou.png" >
-				<img class="nanmei" src="../img/map/nanmei.png" >
+			<div class="worlds">
+				<div class="map">
+					<div id="ouzhou"><image class="ouzhou" src="../img/map/ouzhou.png"></image></div>
+					<div id="ouzhou"><img class="dulianti" src="../img/map/dulianti.png" ></div>
+					<div id="ouzhou"><img class="beimei" src="../img/map/beimei.png" ></div>
+					<div id="ouzhou"><img class="zhongdong" src="../img/map/zhongdong.png" ></div>
+					<div id="ouzhou"><img class="nanya" src="../img/map/nanya.png" ></div>
+					<div id="ouzhou"><img class="china" src="../img/map/china.png" ></div>
+					<div id="ouzhou"><img class="beiya" src="../img/map/beiya.png" ></div>
+					<div id="ouzhou"><img class="feizhou" src="../img/map/feizhou.png" ></div>
+					<div id="ouzhou"><img class="dongmeng" src="../img/map/dongmeng.png" ></div>
+					<div id="ouzhou"><img class="zhongmei" src="../img/map/zhongmei.png" ></div>
+					<div id="ouzhou"><img class="aozhou" src="../img/map/aozhou.png" ></div>
+					<div id="ouzhou"><img class="nanmei" src="../img/map/nanmei.png" ></div>
+				</div>
 			</div>
+			
 		</div>
 		<div class="partener_wrap">
 			<h1>合作伙伴</h1>
@@ -65,7 +136,91 @@
 				<a href="#"><img src="../img/car.png" ></a>
 			</div>
 		</div>
+		
+		<!-- 固定右下角部分 -->
+		<div class="rightbottom">
+			<!-- 回到顶部 -->
+			<div class="returntop">回到<br>顶部</div>
+			<!-- 弹出表单 -->
+			<a id="Regist_start_" class="btn btn-success" >联系<br>我们</a>
+
+		</div>
+		
+		
+		<!-- 弹出表单html部分 -->
+		<div id='_start'>
+			<div id='_close' style="display: none;">
+				<span class="glyphicon glyphicon-remove" style="font-size: 30px;">×</span>
+			</div>
+			<br /> 
+			<!-- 会员注册 -->
+			<form name="wuliu"  id='regist_container'  style="display: none;padding-left: 20px;" >
+					<div class="radios" id="">
+						<span>问题类型：</span>
+						<label><input name="questiontype" type="radio" value="1" id="reg_radio"/>咨询 </label> 
+						<label><input name="questiontype" type="radio" value="2" id="reg_radio"/>建议 </label> 
+						<label><input name="questiontype" type="radio" value="3" id="reg_radio"/>投诉 </label>
+						<span class="tip radio_hint"></span>
+					</div>
+					<div class="name" id="formin">
+						<span>您的姓名：</span>
+						<label>
+							<input name="sname" type="text" value="" class="reg_user"/>
+							<span class="tip user_hint"></span>
+							（必填） 
+						</label> 
+					</div>
+					
+					<div class="phone" id="formin">
+						<span>您的手机：</span>
+						<label>
+							<input name="phone" type="text" value="" class="reg_mobile"/>
+							<span class="tip phone_hint"></span>
+							（必填查看回复凭证,确保我们可以联系到您）
+						</label>
+					</div>
+					<div class="email" id="formin">
+						<span>邮箱地址：</span>
+						<label><input name="email" type="text" value="" class="reg_email"/>
+						<span class="tip email_hint"></span>
+						（选填,便于接收反馈结果） 
+						</label>
+					</div>
+					 
+					<div class="logistics" id="formin">
+						<span>物流单号：</span>
+						<label>
+							<input name="logisticsNumber" type="text" value="" class="reg_logistics"/>
+							<span class="tip logistics_hint"></span>
+							（选填）
+						</label>
+					</div>
+					
+					<div class="questiondescription" id="formin">
+						<span style="vertical-align: top;">问题描述：</span>
+						<textarea name="questiondescription" id="" cols="50" rows="10" class="reg_questiondescription"></textarea>
+						<span class="tip questiondescription_hint"></span>
+					</div>
+					<div class="reslog">
+						<input id="btn" type="submit" type="提交">
+						<input type="reset" type="重置">
+					</div>
+					<div class="tip subsuccess"></div>
+			</form>
+		</div>
+			
+		
+		
 		<script src="../js/map.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function(){
+				$('.returntop').click(function(){
+					$('html , body').animate({scrollTop: 0},'slow');
+				});
+			});
+		</script>
+		
 	</body>
 	
 	

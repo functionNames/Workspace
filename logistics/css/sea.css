@@ -1,0 +1,41 @@
+.content_wrap{
+	display: flex;
+}
+.content_wrap .content{
+	padding-left: 80px;
+	padding-right: 176px;
+}
+.content h1{
+	margin: 60px 0 56px 0;
+	font-size: 44px;
+}
+.content p{
+	display: block;
+	font-size: 22px;
+	letter-spacing: 1.5px;
+	color: #626262;
+	padding-bottom: 25px;
+}
+.content_wrap .content h2{
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+.interair{
+	background: url(../img/interair.jpg) no-repeat center;
+	min-height: 1400px;
+}
+.returntops{
+	position: fixed;
+	bottom: 100px;
+	right: 100px;
+	width: 65px;
+	height: 65px;
+	background: #6E93BA;
+	color: #000000;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../common/common.css" />
+		<link rel="shortcut icon" href="http://www.zhaotexiao.com/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../css/menus.css" />
+		<link rel="stylesheet" type="text/css" href="../css/detail.css" />
+		<link rel="stylesheet" type="text/css" href="../css/sea.css"/>
+	</head>
+	<body>
+		<div class="banner">
+			<img src="../img/airbanner.jpg" style="height: 400px;width: 100%;">
+		</div>
+		<div class="content_wrap">
+			<div class="list">
+					<ul class="yiji">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="#">综合物流</a></li>
+						<li><a data-url="internationalair.html" class="inactive">空运</a>
+							<ul style="display: none">
+								<li><a data-url="internationalair.html" class="inactive">国际空运</a>
+									<ul style="display: none">
+										<li><a href="#">空运介绍</a></li>
+										<li><a href="#">国际空运流程</a></li>
+									</ul>
+								</li> 
+								<li class="last">
+									<a data-url="inlandair.html" class="inactive active">国内空运</a>
+									<ul style="display: none">
+										<li><a href="#">国内服务</a></li>
+										<li><a href="">物流服务定制</a></li>
+										<li><a href="">托运须知</a></li>
+										<li><a href="">在线订舱</a></li>
+				
+									</ul>
+								</li> 
+							</ul>
+						</li>
+						<li><a data-url="sea.html" class="inactive sea">海运</a>
+							<ul style="display: none">
+								
+										<li><a href="#">注意事项</a></li>
+										<li><a href="#">服务定制</a></li>
+										<li><a href="#">海运介绍</a></li>
+										<li><a href="#">业务范围</a></li>
+										<li><a href="#">操作流程</a></li>
+							</ul>
+						</li>
+						
+				
+						<li>
+							<a data-url="landfreight.html" class="inactive">陆地货运</a>
+							<ul style="display: none">
+								<li><a href="#" class="">服务特色</a></li>
+								<li><a href="#" class="">操作流程</a></li>  
+								<li><a href="#" class="">注意事项</a></li> 
+								<li><a href="#" class="">服务定制</a></li> 
+								<li><a href="#" class="">在线服务</a></li> 
+							</ul>
+						</li>
+						<li>
+							<a data-url="railfreight.html" class="inactive">铁路货运</a>
+							<ul style="display: none">
+								<li><a href="#" class="">介绍</a></li>
+								<li><a href="#" class="">操作流程</a></li>  
+								<li><a href="#" class="">注意事项</a></li> 
+								 
+							</ul>
+						</li>
+						<li>
+							<a data-url="automotivelogistics.html" class="inactive">汽车物流</a>
+							<ul style="display: none">
+								<li><a href="#" class="">介绍</a></li> 
+								<li><a href="#" class="">服务特色</a></li>
+								<li><a href="#" class="">操作流程</a></li>  
+								<li><a href="#" class="">注意事项</a></li> 
+								 
+							</ul>
+						</li>
+						<li>
+							<a data-url="wh.html" class="inactive">仓储</a>
+							<ul style="display: none">
+								<li><a href="#" class="">仓储服务</a></li>
+								<li><a href="#" class="">服务内容</a></li>  
+								<li><a href="#" class="">在线管理</a></li> 
+							</ul>
+						</li>
+					</ul>
+			</div>
+			<div class="rightbottom">
+				<!-- 回到顶部 -->
+				<div class="returntops">回到<br>顶部</div>
+			</div>
+			<script type="text/javascript" src="../common/jquery-1.4.2.min.js"></script>
+			<script src="../js/nav.js" type="text/javascript" charset="utf-8"></script>
+			<script type="text/javascript" src="../common/main.js"></script>
+		</div>
+		<script>
+		$(".inactive").click(function(){
+			setTimeout( () => {
+				location = $(this).attr("data-url")
+			},1000)
+		})
+		$(function(){
+			$('.returntops').click(function(){
+				$('html , body').animate({scrollTop: 0},'slow');
+			});
+		 });
+		</script>
+	</body>
+	<!-- 统计代码 start -->
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol +
+			"hm.baidu.com/h.js%3F96790c81142777e7724407f030936c10' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<!-- 统计代码 end -->
+</html>
