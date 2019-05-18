@@ -1,0 +1,188 @@
+/* ul 导航 边框 */
+.bordertop {
+  border-top: 1px solid #d9d9d9;
+}
+.margintop10 {
+  margin-top: 10px;
+}
+.margintop20 {
+  margin-top: 20px;
+}
+.ab_content {
+  overflow: hidden;
+  background-color: #f3f3f3;
+  width: 100%;
+}
+.imgclass {
+  background-image: url("../img/ban-ny.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  width: 100%;
+  height: 300px;
+}
+.imgclassraba {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+/* 内容导航 div */
+.ab_content_nav_div {
+  margin: 0px auto;
+  width: 60.2%;
+  height: 100%;
+  min-width: 945px;
+}
+
+.ab_content_nav {
+  width: 245px;
+  min-width: 245px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  top: -45px;
+  height: 150px;
+  /* box-shadow: 0px 2px 10px 1px #E3E6E9; */
+}
+.ab_content_nav2 {
+  width: 245px;
+  min-width: 245px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  top: -45px;
+  height: 350px;
+  /* box-shadow: 0px 2px 10px 1px #E3E6E9; */
+}
+.ab_content_nav3 {
+  width: 245px;
+  min-width: 245px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  top:-45px;
+  height:300px;
+}
+.ab_content_nav4 {
+  width: 245px;
+  min-width: 245px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  top: -45px;
+  height: 700px;
+}
+.ab_content_nav5 {
+  width: 245px;
+  min-width: 245px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  top: -45px;
+  height: 50px;
+}
+.ab_content_nav6 {
+  width: 245px;
+  min-width: 245px;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  top: -45px;
+  height: 245px;
+}
+
+
+.ab_content_nav ul {
+  width: 100%;
+}
+
+.ab_content_nav_ul_li_one {
+  height: 50px;
+  line-height: 40px;
+  font-size: 1.0625rem;
+  font-weight: bold;
+}
+.ab_content_nav_ul_li_more {
+  height: 50px;
+  line-height: 50px;
+}
+.ab_content_nav_ul_li_one a:hover {
+  color: #002d62;
+}
+
+.ab_content_nav_ul_li_more a {
+  margin-left: 10px;
+}
+.ab_content_nav_ul_li_more a:hover {
+  color: #cd0537;
+}
+
+.ab_content_contents {
+  background-color: #fff;
+  /* width: 80%; */
+  margin: 30px 0px 30px 30px;
+  padding: 30px;
+  width: 1100px;
+  /* min-width: 705px; */
+}
+.ab_content_contents img {
+  width: 100%;
+}
+
+/* from表单按钮 */
+.formbt {
+  width: 90px !important;
+}
+/* form表单外面div */
+.formdiv {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.news_div {
+  width: 100%;
+  height: 110px;
+  margin: 30px 0px;
+}
+/* 新闻图片外div */
+.news_img_div {
+  width: 200px;
+  height: 100%;
+
+  min-width: 200px;
+}
+.news_img_div img {
+  width: 200px;
+  height: 110px;
+}
+.news_content_div {
+  margin-left: 20px;
+  width: 70%;
+  height: 100%;
+  min-width: 600px;
+}
+
+.dian{
+width: 520px;
+  /* width:100px; */
+display:block;/*内联对象需加*/
+word-break:keep-all;/* 不换行 */
+white-space:nowrap;/* 不换行 */
+overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */
+text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+/* 分页 */
+.wrap {
+  margin-top: 75px;
+}
+
+
+.weixin_div_p{
+  color: #607280 !important;
+  font-size: 1rem !important;
+  height: 40px !important;
+  line-height: 40px !important;
+}
+.weixin_div_img{
+  width: 83px !important;
+}
